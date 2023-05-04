@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Microgramma';
+  src: local('Microgramma Bold'), url(./fonts/Microgramma\ Bold.otf) format('opentype');
+}
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+  font-family: 'Microgramma', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}
+
+body h1, h2, h3, h4, h5, h6 {
+  font-family: 'Microgramma', sans-serif;
+  text-transform: uppercase;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root{
+
+  position: relative;
+}
+
