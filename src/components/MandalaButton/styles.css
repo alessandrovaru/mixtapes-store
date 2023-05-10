@@ -1,0 +1,11 @@
+
+
+.mandala-container{
+  animation: slideInFromLeft 2s ease-in-out;
+}
+.mandala-container .tilt{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center
+}

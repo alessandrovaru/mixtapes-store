@@ -1,0 +1,55 @@
+.swiper-scroll-lock {
+  overflow-x: hidden !important;
+}
+
+.slider-container{
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: fixed;
+}
+
+.swiper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+  
+.swiper-scrollbar{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10px;
+  background: rgba(0,0,0,.1);
+}
+
+.swiper-scrollbar-drag{
+  height: 100%;
+  transition: transform .8s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+  background: rgba(0,0,0,.4);
+}
+
+.swiper-wrapper{
+  display: flex;
+  transition: transform .8s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
+}
+
+.swiper-slide{
+  height: 100%;
+  width: auto !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: Sans-serif;
+  text-shadow: 1px 2px 2px rgba(0,0,0,.2);
+  color: #fff;
+}
+
+.swiper-slide img{
+  height: 100%;
+  width: auto;
+}

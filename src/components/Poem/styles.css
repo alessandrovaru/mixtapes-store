@@ -1,0 +1,32 @@
+.poem-container{
+  animation: slideInFromLeft 2s ease-in-out;
+}
+  
+p{
+  font-family:'Questrial';
+  font-size: 16px;
+}
+h1{
+  font-size: 12px
+}
+a{
+  text-decoration: none;
+  color: white
+}
+a:hover{
+  text-decoration: none;
+  color: gray
+}
+
+@media only screen and (max-width: 900px) {
+  p{
+    font-family:'Questrial';
+    font-size: 10px;
+  }
+  h1{
+    font-size: 8px
+  }
+  h2{
+    font-size: 18px
+  }
+}

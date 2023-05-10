@@ -1,0 +1,40 @@
+.poem-post-container{
+  width: 100vw;
+  height: auto;
+  min-height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;  
+}
+
+.poem-post-content-container{
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;  
+}
+
+.poem-post-content-container h1{
+  font-size: 3rem;
+  color: #000;
+  text-align: right;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.poem-post-content-container p{
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000;
+  text-align: right;
+  margin-bottom: 2rem;
+  width: 100%;
+}

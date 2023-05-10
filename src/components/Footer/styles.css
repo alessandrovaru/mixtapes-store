@@ -1,0 +1,32 @@
+.footer-section{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background:white;
+  height: 4vh;
+  font-family: 'Questrial', sans-serif;
+  text-transform: none; 
+  font-size: 10px;
+  position: relative;
+  z-index:3
+}
+
+.footer-p{
+  margin:0;
+  padding:0;
+}
+
+.footer-span{
+  font-family: 'Microgramma', sans-serif;
+  text-transform: uppercase
+}
+
+.footer-a{
+  text-decoration:none;
+  color: black;
+  margin-left: 2px
+}
