@@ -9,6 +9,7 @@ import '@/components/Poem/styles.css'
 import '@/components/PoemPost/styles.css'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'swiper/swiper.min.css';
 
 
 import localFont from 'next/font/local'
@@ -23,8 +24,6 @@ const microgramma = localFont({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={microgramma.className}>
       <Component {...pageProps} />
-    </main>
   )
 }

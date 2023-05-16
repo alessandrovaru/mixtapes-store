@@ -8,13 +8,13 @@ import Image from 'next/image';
 
 const Slider = (props) => {
   const [slides, setSlides] = useState([]);
+
   useEffect(() => {
     setSlides(props.slides);
   }, [props.slides]);
 
   return (
-    // add style inline and make it dynamic and !important
-    <div className='slider-container' style={{height: props.height}}>
+    <div className='slider-container' style={{height: props.height}}> 
       <Swiper
         slidesPerView={"auto"}
         freeMode={{
@@ -32,11 +32,12 @@ const Slider = (props) => {
       >
         {slides.map (slide => (
           <SwiperSlide key={slide.id}>
-            <Image src={slide.image} fluid />
+            <Image className='img-fluid' src={slide.image} fluid />
           </SwiperSlide>
         ))}
       </Swiper>
     </div>
+   
     
   );
 };

@@ -66,8 +66,8 @@ if (!start) {
 
   return (
     <div className="App">
-        {/* <PoemPost />   */}
-        <header className="App-header">
+        <PoemPost />  
+        {/* <header className="App-header">
           {start ?
             <>
               <MandalaButton/>
@@ -77,7 +77,7 @@ if (!start) {
               <h2 className='startButton' onClick={()=>setStart(true)}>{welcome}</h2>
             </>
           }
-        </header>
+        </header> */}
         <Footer />
     </div>
   );
