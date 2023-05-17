@@ -35,7 +35,7 @@
   opacity: 0.8;
   background-image: radial-gradient(circle at center center, #bcefcb, #012710), repeating-radial-gradient(circle at center center, #bcefcb, #bcefcb, 10px, transparent 20px, transparent 10px);
   background-blend-mode: multiply;
-  height: 96vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

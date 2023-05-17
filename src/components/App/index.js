@@ -62,23 +62,28 @@ function App() {
 if (!start) {
   randomWelcome();
 }
+
+ 
   
+
 
   return (
     <div className="App">
-        <PoemPost />  
-        {/* <header className="App-header">
-          {start ?
-            <>
-              <MandalaButton/>
-            </>
-          :
-            <>
-              <h2 className='startButton' onClick={()=>setStart(true)}>{welcome}</h2>
-            </>
-          }
-        </header> */}
-        <Footer />
+      {/* <header className="App-header">
+        {start ?
+          <>
+            <MandalaButton/>
+          </>
+        :
+          <>
+            <h2 className='startButton' onClick={()=>setStart(true)}>{welcome}</h2>
+            <button className='startButton' onClick={()=>scrollToElement()}>Start</button>
+          </>
+        }
+      </header> */}
+      <PoemPost />  
+      
+      <Footer />
     </div>
   );
 }

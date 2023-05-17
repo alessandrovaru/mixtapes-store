@@ -61,22 +61,34 @@ const PoemPost = () => {
     url: 'https://www.google.com'
   }
 
+  const scrollToElement = () => {
+    const element = document.getElementById("poemPost");
+    element.scrollIntoView();
+  };
+
   return (
-    <div className='poem-post-container'>
-      <Slider slides={slides} height={"100vh"} />
-      <div className='poem-post-content-container'>
-        <div>
-          <Image src={poemPostContent.image} alt="Foto" width={500} height={500} />
-        </div>
-        <div className='poem-post-text-container'>
-          <h1 className={`${microgramma.className}`}>{poemPostContent.title}</h1>
-          <p dangerouslySetInnerHTML={{__html: poemPostContent.text}}></p>
-          <div className='poem-post-svg-container'>
-            <PoemPostIcons />
+    <>
+      <header className="App-header">
+        <button className='startButton' onClick={()=>scrollToElement()}>Start</button>
+      </header>
+      <div id='poemPost' className='poem-post-container'>
+        <Slider slides={slides} height={"100vh"} />
+        <div className='poem-post-content-container'>
+          <div className='poem-post-text-container'>
+            <h1 className={`${microgramma.className}`}>{poemPostContent.title}</h1>
+            <p dangerouslySetInnerHTML={{__html: poemPostContent.text}}></p>
+            <small>Fotografía tomada en un autobús en la ciudad de Caracas. El Mandala es el centro este proyecto, símbolo de totalidad y orden interior. Los diseños son creados a partir de mis fotos y mi producción inconsciente.</small>
+            <hr />
+            <div className='poem-post-svg-container'>
+              <PoemPostIcons />
+            </div>
+          </div>
+          <div className='poem-post-image'>
+            <Image src={poemPostContent.image} alt="Foto" width={400} height={400} />
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
