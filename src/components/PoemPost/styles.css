@@ -102,7 +102,7 @@
   flex-direction: row;
   align-items: flex-end;
   justify-content: space-between;
-  width: 200px;
+  width: 100px;
 }
 
 .poem-post-svg-container svg{
